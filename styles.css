@@ -4,11 +4,15 @@
   --dark-gray: #57534e;
   --bombay-color: #0284c7;
   --offwhite-color:#94a3b8;
+  --my-color:#f8fafc;
+
 }
 
 body {
   font-family: "Agdasima", sans-serif;
   margin:0px;
+  font-size: 18px;
+  text-align: center;
 }
 /** container **/
 .container {
@@ -24,11 +28,16 @@ body {
   padding: 0.5rem 1rem;
 }
 .link-primary {
-  background-color: var(--offwhite-color);
+  background-color: var(--my-color);
   border-radius: 0.5rem;
-  color: white;
+  color: rgb(8, 6, 6);
 }
 .link-secondary {
+  color: var(--my-color);
+  border-radius: 0.5rem;
+  border: 1px solid var(--my-color);
+}
+.link-blue{
   color: var(--offwhite-color);
   border-radius: 0.5rem;
   border: 1px solid var(--offwhite-color);
@@ -44,7 +53,7 @@ body {
 /** navigations **/
 .navigation {
   background-color: var(--offwhite-color);
-  color: white;
+  color: #150505;
   border-bottom-left-radius: 1rem;
 }
 .navigation .nav-pills {
@@ -55,7 +64,7 @@ body {
   font-weight: bold;
 }
 .navigation .link {
-  color: white;
+  color: rgb(4, 3, 3);
 }
 .navigation .link-active {
   font-weight: bold;
@@ -82,6 +91,9 @@ body {
 .section h3 {
   text-align: center;
 }
+.section h1 {
+  text-align: center;
+}
 .section{
 	padding: 2rem;
 }
@@ -90,15 +102,17 @@ body {
 }
 /** footers **/
 .footer{
-background-color:var(--offwhite-color);
+background-color:var(--my-color);
 padding : 2rem 1rem;
 text-align: center;
-color: white;
+color: rgb(8, 6, 6);
 border-top-right-radius: 1rem;
 }
-.footer .link{
-color: white;
-}
+
 .footer ul{
 	padding-inline-start: 0px;
+}
+.footer .header{
+  font-weight: bold;
+  font-size: large;
 }
